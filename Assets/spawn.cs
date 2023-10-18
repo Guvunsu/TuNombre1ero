@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
-    public GameObject Gun;
-    public GameObject Bullet;
+   
     public GameObject objectToSpawn;
     public Vector3 spawnPoint = new Vector3(0, 0, 0);
     public Vector3 direction;
     public float speed = 100f;
     private Rigidbody rb;
-    public Vector3 bull = new Vector3(0, 0, 0);
 
     void Start()
     {

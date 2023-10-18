@@ -16,7 +16,7 @@ public class susenemy : MonoBehaviour
     
         float time = 0;
         float numero = Random.Range(10, 20);
-        Vector3 RandomPosition = new Vector3(0, numero, 0);
+        Vector3 RandomPosition = new Vector3(10, numero, 20);
         if ( time <0)
         {
             Instantiate(Enemy, RandomPosition, Quaternion.identity);
