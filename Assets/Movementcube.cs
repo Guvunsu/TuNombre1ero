@@ -18,26 +18,28 @@ public class Movementcube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectToSpawn = transform.GetChild(0).gameObject;
-        Debug.Log(objectToSpawn.name);
-        
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input .GetKeyDown(KeyCode.Space))
+        {
+        Instantiate(objectToSpawn, transform.position,Quaternion.identity);
+
+        }
 
         float dt = Time.deltaTime;
         if (Input.GetKey(KeyCode.W))
         {
-            direction.y = +1;
+            transform.Translate(Vector3.up.normalized * dt * speed);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            direction.y = -1;
+        transform.Translate(Vector3.down.normalized * dt * speed);
+          
         }
-        transform.Find("objectToSpawn");
-        transform.Translate(direction.normalized * dt * speed);
+       
     }
 }
