@@ -1,25 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class susenemy : MonoBehaviour
+// https://www.youtube.com/watch?v=ydjpNNA5804
+
 {
     public GameObject Enemy;
+    public int zPos;
+    public int xPos;
+    public int EnemyCount;
     void Start()
     {
-        
+        StartCoroutine(EnemyDrop());
     }
-
-    // Update is called once per frame
-    void Update()
+    IEnumerator EnemyDrop()
     {
-    
-        float time = 0;
-        float numero = Random.Range(10, 20);
-        Vector3 RandomPosition = new Vector3(10, numero, 20);
-        if ( time <0)
+        while (EnemyCount < 10)
         {
-            Instantiate(Enemy, RandomPosition, Quaternion.identity);
+            xPos = Random.Range(10, 3);
+            zPos = Random.Range(10,2);
+            Instantiate(Enemy, new Vector3(xPos, 7, zPos), Quaternion.identity);
+            yield return new WaitForSeconds(0.1f);
+            EnemyCount += 1;
         }
     }
+
 }

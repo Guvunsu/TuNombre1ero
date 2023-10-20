@@ -38,6 +38,15 @@ public class Movementcube : MonoBehaviour
             transform.Translate(Vector3.down.normalized * dt * speed);
 
         }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(Vector3.right.normalized * dt * speed);
 
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(Vector3.left.normalized * dt * speed);
+
+        }
     }
 }
