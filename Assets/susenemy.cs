@@ -11,8 +11,10 @@ public class susenemy : MonoBehaviour
     public int zPos;
     public int xPos;
     public int EnemyCount;
+    
     void Start()
     {
+      
         StartCoroutine(EnemyDrop());
     }
     IEnumerator EnemyDrop()
