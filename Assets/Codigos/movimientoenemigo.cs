@@ -8,22 +8,22 @@ public class movimientoenemigo : MonoBehaviour
     private puntos Puntuacion;
     void Start()
     {
+     
         Puntuacion = FindObjectOfType<puntos>();
     }
 
-   private void Update()
+    private void Update()
     {
         transform.Translate(Vector3.left.normalized * speed * Time.deltaTime);
     }
-        public void OnCollisionEnter(Collision collision)
-       
-        {
-        if ( Collision = gameObject)// TERMIANR ESTO 
+    public void OnCollisionEnter(Collision collision)
+    {
         Puntuacion.AddPoints(1);
         Destroy(collision.gameObject);
         Destroy(gameObject);
 
 
-        }
+
     }
+}
 
