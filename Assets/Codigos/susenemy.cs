@@ -17,7 +17,7 @@ public class susenemy : MonoBehaviour
       
         StartCoroutine(EnemyDrop());
     }
-    IEnumerator EnemyDrop()
+    IEnumerator EnemyDrop() //checar esto con el profesor 
     {
         while (EnemyCount < 10)
         {

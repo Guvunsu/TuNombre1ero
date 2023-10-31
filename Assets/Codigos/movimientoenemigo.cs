@@ -18,9 +18,13 @@ public class movimientoenemigo : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "PLayer")
+        {
         Puntuacion.AddPoints(1);
         Destroy(collision.gameObject);
         Destroy(gameObject);
+
+        }
 
 
 
