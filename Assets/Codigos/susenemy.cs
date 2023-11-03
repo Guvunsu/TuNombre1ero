@@ -21,11 +21,16 @@ public class susenemy : MonoBehaviour
     {
         while (EnemyCount < 10)
         {
-            xPos = Random.Range(10, 3);
-            zPos = Random.Range(10,2);
-            Instantiate(Enemy, new Vector3(xPos, 7, zPos), Quaternion.identity);
+            xPos = Random.Range(100, 0);
+            zPos = Random.Range(0,100);
+            Instantiate(Enemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.1f);
-            EnemyCount += 1;
+            EnemyCount += 20;
+
+        }
+        void OnCollisionEnter(Collision collision)
+        {
+            Destroy(collision.gameObject);
         }
     }
 
