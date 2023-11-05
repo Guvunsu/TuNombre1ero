@@ -6,8 +6,9 @@ using UnityEngine;
 public class Movementcube : MonoBehaviour
 {
 
-    
-   
+
+    public float DañoEnemigo = 0;
+    internal static int value;
     public float speed = 5f;
     public GameObject objectToSpawn;
    
@@ -22,6 +23,7 @@ public class Movementcube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(objectToSpawn, transform.position, Quaternion.identity);
@@ -48,5 +50,6 @@ public class Movementcube : MonoBehaviour
             transform.Translate(Vector3.left.normalized * dt * speed);
 
         }
+      
     }
 }
