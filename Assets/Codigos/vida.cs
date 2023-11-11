@@ -6,6 +6,7 @@ public class vida : MonoBehaviour   //https://gist.github.com/RocketJamDev/b24b1
 {
     public GameOver gameManager;
     public float Vida;
+    private bool siMuere;
     void Update()
     {
         
@@ -20,8 +21,9 @@ public class vida : MonoBehaviour   //https://gist.github.com/RocketJamDev/b24b1
             {
                 Destroy(this.gameObject);
             }
-            if (Vida <= 0)
+            if (Vida <= 0 && !siMuere)
             {
+                siMuere = true;
                 gameManager.gameOver();
             }
         }
