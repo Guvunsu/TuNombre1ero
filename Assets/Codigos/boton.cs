@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class boton : MonoBehaviour
 {
@@ -14,4 +15,5 @@ public class boton : MonoBehaviour
         Debug.Log("Salir");
         Application.Quit();
     }
+    
 }

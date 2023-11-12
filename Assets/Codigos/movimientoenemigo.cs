@@ -14,11 +14,8 @@ public class movimientoenemigo : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector3.right.normalized * speed * Time.deltaTime);
+       
         transform.Translate(Vector3.left.normalized * speed * Time.deltaTime);
-        transform.Translate(Vector3.down.normalized * speed * Time.deltaTime);
-        transform.Translate(Vector3.up.normalized * speed * Time.deltaTime);
-        transform.Translate(Vector3.forward.normalized * speed * Time.deltaTime);
     }
     public void OnCollisionEnter(Collision collision)
     {

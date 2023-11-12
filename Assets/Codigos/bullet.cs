@@ -7,16 +7,26 @@ using UnityEngine.EventSystems;
 
 public class bullet : MonoBehaviour
 {
-    public float speed ;
+    [SerializeField] private float speed ;
+    [SerializeField] private float Daño;
 
     void Start()
     {    
     }
 
-    void Update()
+    private void Update()
     {
         
     
-        transform.Translate ( Vector3 .right.normalized * speed * Time.deltaTime );
+        transform.Translate ( Vector2 .right.normalized * speed * Time.deltaTime );
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("Enemigo"))
+        {
+            Destroy(gameObject);
+        }
+    }
+   
 }
