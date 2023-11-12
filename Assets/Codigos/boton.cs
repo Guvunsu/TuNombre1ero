@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class boton : MonoBehaviour
 {
-    public void BotonJugar()
+    public void Jugar()
     {
-        SceneManager.LoadScene (1);
+        SceneManager.LoadScene (SceneManager.GetActiveScene() .buildIndex +  1);
+    }
+    public void Salir()
+    {
+        Debug.Log("Salir");
+        Application.Quit();
     }
 }

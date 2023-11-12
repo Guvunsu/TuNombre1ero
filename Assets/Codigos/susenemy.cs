@@ -11,27 +11,28 @@ public class susenemy : MonoBehaviour
     public int zPos;
     public int xPos;
     public int EnemyCount;
-    
+    public float Timer;
+
     void Start()
     {
-      
-        StartCoroutine(EnemyDrop());
+
+        Timer = 1;
     }
-    IEnumerator EnemyDrop() //checar esto con el profesor 
+    private void Update()
     {
-        while (EnemyCount < 10)
+        Timer = Timer - Time.deltaTime;
+        if (Timer <= 1)
         {
             xPos = Random.Range(100, 0);
-            zPos = Random.Range(0,100);
+            zPos = Random.Range(0, 100);
             Instantiate(Enemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
-            EnemyCount += 20;
-
-        }
-        void OnCollisionEnter(Collision collision)
-        {
-            Destroy(collision.gameObject);
+            Enemy.transform.position = new Vector3(xPos, zPos, 0);
+            Timer = 2;
         }
     }
-
+    void OnCollisionEnter(Collision collision)
+    {
+        Destroy(collision.gameObject);
+    }
 }
+
