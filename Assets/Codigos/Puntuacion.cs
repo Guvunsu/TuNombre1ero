@@ -7,16 +7,16 @@ public class Puntuacion : MonoBehaviour
 {
     private float Puntos;
 
-    private TextMeshProUGUI textMesh;
+    private TMP_Text textMesh;
     private void Start()
     {
-        textMesh = GetComponent<TextMeshProUGUI>();
+        textMesh = GetComponent<TMP_Text>();
     }
 
     private void Update()
     {
         Puntos += Time.deltaTime;
-        textMesh.text = Puntos.ToString("0");
+        textMesh.text = Puntos.ToString();
     }
     public void SumarPuntos( float PuntosEntrada)
     {
