@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -450,10 +450,10 @@ RectTransform:
   m_Father: {fileID: 73585321}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -427, y: 188}
-  m_SizeDelta: {x: 264.924, y: 49.3028}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 132.46204, y: -86}
+  m_SizeDelta: {x: 264.924, y: 49.302795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188389362
 MonoBehaviour:
@@ -1025,10 +1025,10 @@ RectTransform:
   m_Father: {fileID: 73585321}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: 197}
-  m_SizeDelta: {x: 288.2347, y: 38.0202}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -144.11737, y: -86}
+  m_SizeDelta: {x: 288.23474, y: 38.020203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244262441
 MonoBehaviour:
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 1403627173}
   - component: {fileID: 1403627172}
   m_Layer: 0
-  m_Name: DragonRojo
+  m_Name: NaveEspacial
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1200,7 +1200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8eb39d29f270ae34a8240ab516015f04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7afbfd12e7565747b6d83fc276429be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1232,8 +1232,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403627167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.61, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -5.8691, y: 0.439, z: 0}
+  m_LocalScale: {x: 0.23764001, y: 0.29209208, z: 0.23764}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2013619491}
@@ -1297,7 +1297,7 @@ RectTransform:
   m_GameObject: {fileID: 1481800492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.2508, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 888401559}
@@ -1306,9 +1306,9 @@ RectTransform:
   m_Father: {fileID: 73585321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: 242}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -19.4693}
   m_SizeDelta: {x: 821.8231, y: 38.9386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481800495
@@ -1356,19 +1356,19 @@ MonoBehaviour:
   m_HandleRect: {fileID: 710907647}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 73585317}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+      - m_Target: {fileID: 102900000, guid: 5f8c8e16876f8a841b9be90e4ae56afd, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1660,8 +1660,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967504001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7000122, y: 0.8999939, z: 4.1000004}
-  m_LocalScale: {x: 6.7382755, y: 5.9087486, z: 1}
+  m_LocalPosition: {x: 0.0145, y: -0.0187, z: 4.1000004}
+  m_LocalScale: {x: 4.5413203, y: 4.643425, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1734,7 +1734,7 @@ GameObject:
   - component: {fileID: 2013619495}
   - component: {fileID: 2013619496}
   m_Layer: 0
-  m_Name: FireBlue
+  m_Name: RayoLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1747,14 +1747,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013619490}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9995221, w: 0.030913765}
-  m_LocalPosition: {x: 7.81, y: -0.33, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.922, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0030154146, w: 0.9999955}
+  m_LocalPosition: {x: 1.54, y: -0.11, z: 0}
+  m_LocalScale: {x: 0.5185, y: 0.5013983, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1403627170}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 176.457}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.346}
 --- !u!212 &2013619492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2025,8 +2025,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022732075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.11, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 12.07, y: 0, z: 0}
+  m_LocalScale: {x: 0.23764, y: 0.23764, z: 0.23764}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1510983262}
