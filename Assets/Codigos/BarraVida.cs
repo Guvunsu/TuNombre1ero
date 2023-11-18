@@ -7,8 +7,8 @@ public class BarraVida : MonoBehaviour
 {
     //https://www.youtube.com/watch?v=nIfa2u5bU74
     public Slider VIdaSlider ;
-    public int Vida = 10;
-    public float DañoEnemigo = 0;
+    public int Vida = 0;
+    public float DañoEnemigo = 1;
 
     void Update()
     {
@@ -17,14 +17,19 @@ public class BarraVida : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(VIdaSlider);
+
         }
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == ("Jugador")) ;
+        if (collision.gameObject.tag == ("Player"))
+        {
         VIdaSlider.value -= DañoEnemigo;
         Destroy(collision.gameObject);
+           
+
+        }
     }
 }

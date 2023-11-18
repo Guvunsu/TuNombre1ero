@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class vida : MonoBehaviour   //https://gist.github.com/RocketJamDev/b24b1ba09fd94f6314d0f3d6b52bd608
 {
     public GameOver gameManager;
-    [SerializeField] int Vida;
-    [SerializeField] int MaxVida;
+    [SerializeField] int Vida = 0;
+    [SerializeField] int MaxVida = 10;
     private bool siMuere; 
   
     private void Update()

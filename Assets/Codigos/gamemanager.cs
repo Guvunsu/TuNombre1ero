@@ -7,7 +7,7 @@ public class gamemanager : MonoBehaviour  //https://gist.github.com/RocketJamDev
 {
     public static gamemanager Instance { get; private set; }
 
-    public HUD hud;
+    public puntos hud;
 
     public int PuntosTotales { get; private set; }
 

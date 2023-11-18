@@ -7,24 +7,27 @@ public class Movementcube : MonoBehaviour
 {
 
 
-    public float DañoEnemigo = 0;
-    public AudioSource AudioComponent;
+    public float DañoEnemigo = 1;
     internal static int value;
     public float speed = 5f;
     public GameObject objectToSpawn;
-   
+
+    public AudioSource AudioComponent;
+    [SerializeField] private float TiempoVida;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(gameObject, TiempoVida);
         AudioComponent = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(objectToSpawn, transform.position, Quaternion.identity);
@@ -52,6 +55,6 @@ public class Movementcube : MonoBehaviour
             transform.Translate(Vector3.left.normalized * dt * speed);
 
         }
-        
+
     }
 }
