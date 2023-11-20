@@ -23,7 +23,7 @@ public class movimientoenemigo : MonoBehaviour
     {
         Vector2 pos = transform.position;
         pos.x -= MoveSpeed * Time.fixedDeltaTime;
-        transform.position = pos;
+        transform.position = pos; 
     }
 }
 

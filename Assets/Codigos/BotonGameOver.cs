@@ -5,13 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class BotonGameOver : MonoBehaviour
 {
-    public void Reiniciar()
+    public GameObject GameOverUI;
+
+    public GameObject jugador;
+    public GameObject RespawnPoint;
+
+    void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void gameOver()
+    {
+        GameOverUI.SetActive(true);
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Reintentar");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("MenuPrincipal");
+        Debug.Log("Menu");
     }
     public void Salir()
     {
-        Debug.Log("Salir");
         Application.Quit();
+        Debug.Log("Salir");
+    }
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
+
     }
 }
+
+
