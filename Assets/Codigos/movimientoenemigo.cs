@@ -4,31 +4,26 @@ using UnityEngine;
 
 public class movimientoenemigo : MonoBehaviour
 {
-    public float speed;
-    private puntos Puntuacion;
+    public float MoveSpeed = 5;
+
+    
+
     void Start()
     {
-     
-        Puntuacion = FindObjectOfType<puntos>();
+
+   
     }
 
     private void Update()
     {
-       
-        transform.Translate(Vector3.left.normalized * speed * Time.deltaTime);
+
+        
     }
-    public void OnCollisionEnter(Collision collision)
+    private void FixedUpdate()
     {
-        if (collision.gameObject.tag == "PLayer")
-        {
-        Puntuacion.AddPoints(1);
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
-
-        }
-
-
-
+        Vector2 pos = transform.position;
+        pos.x -= MoveSpeed * Time.fixedDeltaTime;
+        transform.position = pos;
     }
 }
 
