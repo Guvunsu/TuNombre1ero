@@ -5,33 +5,34 @@ using UnityEngine;
 
 public class Movementcube : MonoBehaviour
 {
-
+    gun[] guns;
 
     public float DañoEnemigo = 1;
     internal static int value;
-    public float speed = 5f;
-    public GameObject objectToSpawn;
+    public float speed = 200f;
+    public GameObject RayoLaser;
 
     public AudioSource AudioComponent;
     [SerializeField] private float TiempoVida;
 
+ 
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, TiempoVida);
+        guns = transform.GetComponentsInChildren<gun>();
         AudioComponent = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(objectToSpawn, transform.position, Quaternion.identity);
-            AudioComponent.Play();
+            Instantiate(RayoLaser, transform.position, Quaternion.identity);
+            Destroy(gameObject, TiempoVida);
+
+          
 
         }
 
@@ -56,5 +57,14 @@ public class Movementcube : MonoBehaviour
 
         }
 
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        bullet Bala = collision.GetComponent<bullet>();
+        if (Bala != null)
+        {
+            Destroy(gameObject);
+            Destroy(Bala.gameObject);
+        }
     }
 }

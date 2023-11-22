@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class movimientoenemigo : MonoBehaviour
 {
-    public float MoveSpeed = 5;
+    public float MoveSpeed = 350;
 
     
 
     void Start()
     {
 
+        transform.Translate(Vector3.left.normalized * Time.deltaTime * MoveSpeed);
    
     }
 
     private void Update()
     {
 
-        
     }
     private void FixedUpdate()
     {

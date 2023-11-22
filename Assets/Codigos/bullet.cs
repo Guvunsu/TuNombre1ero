@@ -7,18 +7,27 @@ using UnityEngine.EventSystems;
 
 public class bullet : MonoBehaviour
 {
-    [SerializeField] private float speed ;
-    [SerializeField] private float Daño;
+    public Vector2 direction = new Vector2(1, 0);
+    public Vector2 Velocity;
+    public float speed = 250;
+
+
+    public float Daño = 1;
 
     void Start()
-    {    
+    {
+        Destroy(gameObject, 3);
     }
 
-    private void Update()
+    void Update()
     {
-        
-    
-        transform.Translate ( Vector2 .right.normalized * speed * Time.deltaTime );
+        Velocity = direction * speed;
+    }
+    private void FixedUpdate()
+    {
+
+        transform.Translate(Vector2.right.normalized * speed * Time.deltaTime);
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +35,8 @@ public class bullet : MonoBehaviour
         if (collision.gameObject.tag == ("Enemigo"))
         {
             Destroy(gameObject);
+
         }
     }
-   
+
 }
