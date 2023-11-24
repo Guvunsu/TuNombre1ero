@@ -10,9 +10,7 @@ public class movimientoenemigo : MonoBehaviour
 
     void Start()
     {
-
         transform.Translate(Vector3.left.normalized * Time.deltaTime * MoveSpeed);
-   
     }
 
     private void Update()

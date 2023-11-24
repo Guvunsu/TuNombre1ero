@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class bullet : MonoBehaviour
 {
     public Vector2 direction = new Vector2(1, 0);
-    public Vector2 Velocity;
+    public Vector2 Velocity ;
     public float speed = 250;
 
 
@@ -30,13 +30,13 @@ public class bullet : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+   public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == ("Enemigo"))
-        {
+      if (collision.gameObject.tag == ("Untagged"))
+       {
             Destroy(gameObject);
 
-        }
+       }
     }
 
 }

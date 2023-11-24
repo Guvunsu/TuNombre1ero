@@ -6,26 +6,27 @@ public class Destructibles : MonoBehaviour
 {
 
     bool CanSerDestroyed = false;
-    
+
     void Start()
     {
-        
+
     }
 
-    
+
     void Update()
     {
-        if (transform.position.x < 1910)
-        {
-          CanSerDestroyed  = true;
-        }
-        if ( transform.position.y < 62)
+        if (transform.position.x < 5090f)
         {
             CanSerDestroyed = true;
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!CanSerDestroyed)
+        {
+            return;
+        }
         bullet Bullet = collision.GetComponent<bullet>();
         if (Bullet != null)
         {
