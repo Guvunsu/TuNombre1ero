@@ -25,6 +25,7 @@ public class gun : MonoBehaviour
 
         void Start()
         {
+            Shoot();
         }
         void Update()
         {

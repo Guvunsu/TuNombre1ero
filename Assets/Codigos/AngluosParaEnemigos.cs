@@ -8,8 +8,8 @@ public class AngluosParaEnemigos : MonoBehaviour
 
 
     float sinCenterY;
-    public float amplitud = 20;
-    public float frecuency = 0.9f;
+    public float amplitud = 2;
+    public float frecuency = 0.111f;
 
     public bool inverted = false;
     void Start()
