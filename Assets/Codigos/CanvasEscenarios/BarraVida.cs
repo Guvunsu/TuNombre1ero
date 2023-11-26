@@ -15,7 +15,7 @@ public class BarraVida : MonoBehaviour
         Vida = 10;
         if (VIdaSlider.value <= 0)
         {
-            Destroy(gameObject);
+            Destroy( gameObject );
             Destroy(VIdaSlider);
 
         }

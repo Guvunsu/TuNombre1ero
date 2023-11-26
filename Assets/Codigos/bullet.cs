@@ -8,15 +8,17 @@ using UnityEngine.EventSystems;
 public class bullet : MonoBehaviour
 {
     public Vector2 direction = new Vector2(1, 0);
-    public Vector2 Velocity ;
+    public Vector2 Velocity;
     public float speed = 250;
 
+    public bool isEnemy = false;
 
     public float Daño = 1;
 
     void Start()
     {
         Destroy(gameObject, 3);
+      
     }
 
     void Update()
@@ -26,17 +28,19 @@ public class bullet : MonoBehaviour
     private void FixedUpdate()
     {
 
-        transform.Translate(Vector2.right.normalized * speed * Time.deltaTime);
-
+        // transform.Translate(Vector2.right.normalized * speed * Time.deltaTime);
+        Vector2 pos = transform.position;
+        pos += Velocity * Time.deltaTime;
+        transform.position = pos;
     }
 
-   public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-      if (collision.gameObject.tag == ("Untagged"))
-       {
+        if (collision.gameObject.tag == ("Untagged"))
+        {
             Destroy(gameObject);
 
-       }
+        }
     }
 
 }

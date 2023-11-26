@@ -10,12 +10,11 @@ public class gun : MonoBehaviour
 
         //www.youtube.com/watch?v=C7JRl9QoxIo}
 
-        int powerUpGunLevel = 0;
-        public int powerUpLevelRequriment = 0; 
+        //int powerUpGunLevel = 0;
+        public int powerUpLevelRequriment = 0;
+        public bool EstaActivo = false;
 
 
-        public bullet Bullet;
-        Vector2 Direccion;
 
         public bool autoDisparo = false;
         public float disparoIntevaloSegundos = 0.5f;
@@ -23,9 +22,10 @@ public class gun : MonoBehaviour
         float disparoTimer = 0f;
         float delayTimer = 0f;
 
-        public bool EstaActivo = false;
         public float Daño = 1;
 
+        public bullet Bullet;
+        Vector2 Direccion;
         void Start()
         {
             Shoot();

@@ -9,6 +9,8 @@ public class Movementcube : MonoBehaviour
 {
     gun[] guns;
 
+
+
     GameObject Gun;
     GameObject Armor;
     public GameObject RayoLaser;
@@ -20,24 +22,20 @@ public class Movementcube : MonoBehaviour
     public float DañoEnemigo = 1;
     public float speed = 200f;
     [SerializeField] private float TiempoVida;
+
+
     int powerUpGunLevel = 0;
-    
+    public int powerUpLevelRequriment = 0;
+    public bool EstaActivo = false;
 
 
     void Start()
     {
         AudioComponent = GetComponent<AudioSource>();
-        Armor = transform.Find("Armor").gameObject;
+        Armor = transform.Find("Armor").gameObject; 
         DeactivateShield();
         guns = transform.GetComponentsInChildren<gun>();
-        foreach (gun Gun in guns)
-        {
-                Gun.EstaActivo = true;
-            if (Gun.powerUpLevelRequriment != 0 )
-            {
-                Gun.gameObject.SetActive(false);
-            }
-        }
+
     }
 
 
@@ -47,8 +45,14 @@ public class Movementcube : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(RayoLaser, transform.position, Quaternion.identity);
-            Destroy(gameObject, TiempoVida);
-
+            //   foreach (gun Gun in guns)
+            // {
+            //  EstaActivo; Gun =false;
+            //   if (gun.powerUpLevelRequriment != 0)
+            // {
+            //     Gun.gameObject.SetActive(false);
+            //  }
+            //}
 
 
         }
@@ -76,9 +80,10 @@ public class Movementcube : MonoBehaviour
 
     }
 
+    //los setactive/Desactive son para que se activen o al reves a un gameobject dependiendo de su resultado del valor de un booleano
     void ActivateShield()
     {
-        Armor.SetActive(true);
+        Armor.SetActive(true); 
     }
     void DeactivateShield()
     {
@@ -91,19 +96,14 @@ public class Movementcube : MonoBehaviour
 
     void AddGuns()
     {
+
         powerUpGunLevel++;
-        foreach ( gun Gun in guns )
-        {
-            if ( Gun.powerUpLevelRequriment == powerUpGunLevel)
-            {
-                gun.gameObject.SetActive(true);
-            }
-        }
+
     }
 
     void IncreaseSpeed()
     {
-        speed*=2;
+        speed *= 2;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
