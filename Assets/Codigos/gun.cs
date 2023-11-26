@@ -10,6 +10,8 @@ public class gun : MonoBehaviour
 
         //www.youtube.com/watch?v=C7JRl9QoxIo}
 
+        int powerUpGunLevel = 0;
+        public int powerUpLevelRequriment = 0; 
 
 
         public bullet Bullet;
@@ -21,6 +23,7 @@ public class gun : MonoBehaviour
         float disparoTimer = 0f;
         float delayTimer = 0f;
 
+        public bool EstaActivo = false;
         public float Daño = 1;
 
         void Start()
@@ -29,6 +32,10 @@ public class gun : MonoBehaviour
         }
         void Update()
         {
+            if (!EstaActivo)
+            {
+                return;
+            }
             Direccion = (transform.localRotation * Vector2.right).normalized;
             if (autoDisparo)
             {

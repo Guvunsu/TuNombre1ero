@@ -1,33 +1,43 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.EditorTools;
+//using Unity.VisualScripting;
+//using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Movementcube : MonoBehaviour
 {
     gun[] guns;
 
-    public float DañoEnemigo = 1;
-    internal static int value;
-    public float speed = 200f;
+    GameObject Gun;
+    GameObject Armor;
     public GameObject RayoLaser;
 
     public AudioSource AudioComponent;
-    [SerializeField] private float TiempoVida;
 
-    GameObject Armor;
+
+    // internal static int value;
+    public float DañoEnemigo = 1;
+    public float speed = 200f;
+    [SerializeField] private float TiempoVida;
+    int powerUpGunLevel = 0;
+    
+
 
     void Start()
     {
+        AudioComponent = GetComponent<AudioSource>();
         Armor = transform.Find("Armor").gameObject;
         DeactivateShield();
-        AudioComponent = GetComponent<AudioSource>();
-        //  guns = transform.GetComponentsInChildren<gun>();
-        //  foreach(gun Gun in guns)
-        // {
-        //     Gun.isActive = true;
-        // }
+        guns = transform.GetComponentsInChildren<gun>();
+        foreach (gun Gun in guns)
+        {
+                Gun.EstaActivo = true;
+            if (Gun.powerUpLevelRequriment != 0 )
+            {
+                Gun.gameObject.SetActive(false);
+            }
+        }
     }
 
 
@@ -79,9 +89,26 @@ public class Movementcube : MonoBehaviour
         return Armor.activeSelf;
     }
 
+    void AddGuns()
+    {
+        powerUpGunLevel++;
+        foreach ( gun Gun in guns )
+        {
+            if ( Gun.powerUpLevelRequriment == powerUpGunLevel)
+            {
+                gun.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    void IncreaseSpeed()
+    {
+        speed*=2;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
         bullet Bala = collision.GetComponent<bullet>();
         if (Bala != null)
         {
@@ -109,7 +136,16 @@ public class Movementcube : MonoBehaviour
             if (powerUp.activateShield)
             {
                 ActivateShield();
+                if (powerUp.addGuns)
+                {
+                    AddGuns();
+                }
+                if (powerUp.incrementarSpeed)
+                {
+                    IncreaseSpeed();
+                }
             }
+            Destroy(powerUp.gameObject);
         }
     }
 
