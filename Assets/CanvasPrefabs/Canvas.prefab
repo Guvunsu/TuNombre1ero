@@ -413,6 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9448d66d2dfa97b4081f88981996ca06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Puntos: {fileID: 0}
+  vidas: []
 --- !u!1 &2577586617580852783
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +775,7 @@ GameObject:
   - component: {fileID: 2577586618424505506}
   - component: {fileID: 2577586618424505505}
   - component: {fileID: 2577586618424505504}
-  - component: {fileID: 2577586618424505507}
+  - component: {fileID: 7176145468219825002}
   m_Layer: 5
   m_Name: Tiempo
   m_TagString: Untagged
@@ -898,7 +900,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2577586618424505507
+--- !u!114 &7176145468219825002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -907,6 +909,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2577586618424505517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4da57bc43c3036d4fbafeba135045c76, type: 3}
+  m_Script: {fileID: 11500000, guid: 4aeb21785c1a6714886db06944a7a8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Puntos: {fileID: 2577586617366434681}
+  vidas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

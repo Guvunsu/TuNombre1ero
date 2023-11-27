@@ -21,7 +21,7 @@ public class Movementcube : MonoBehaviour
     // internal static int value;
     public float DañoEnemigo = 1;
     public float speed = 200f;
-    [SerializeField] private float TiempoVida;
+    public float TiempoVida;
 
 
     int powerUpGunLevel = 0;
@@ -32,8 +32,9 @@ public class Movementcube : MonoBehaviour
     void Start()
     {
         AudioComponent = GetComponent<AudioSource>();
-        Armor = transform.Find("Armor").gameObject; 
-        DeactivateShield();
+        //Armor = transform.Find("circle").gameObject;
+        // this.Armor = Armor;
+        //DeactivateShield();
         guns = transform.GetComponentsInChildren<gun>();
 
     }
@@ -81,19 +82,19 @@ public class Movementcube : MonoBehaviour
     }
 
     //los setactive/Desactive son para que se activen o al reves a un gameobject dependiendo de su resultado del valor de un booleano
-    void ActivateShield()
-    {
-        Armor.SetActive(true); 
-    }
-    void DeactivateShield()
-    {
-        Armor.SetActive(false);
-    }
-    bool HasShield()
-    {
-        return Armor.activeSelf;
-    }
-
+    /* void ActivateShield()
+     {
+         Armor.SetActive(true);
+     }
+     void DeactivateShield()
+     {
+         Armor.SetActive(false);
+     }
+     bool HasShield()
+     {
+         return Armor.activeSelf;
+     }
+     */
     void AddGuns()
     {
 
@@ -118,7 +119,7 @@ public class Movementcube : MonoBehaviour
         Destructibles destructible = collision.GetComponent<Destructibles>();
         if (destructible != null)
         {
-            if (HasShield())
+            /*if (HasShield())
             {
                 DeactivateShield();
             }
@@ -129,24 +130,26 @@ public class Movementcube : MonoBehaviour
             }
             Destroy(destructible.gameObject);
         }
+            */
 
-        PowerUp powerUp = collision.GetComponent<PowerUp>();
-        if (powerUp)
-        {
-            if (powerUp.activateShield)
+            PowerUp powerUp = collision.GetComponent<PowerUp>();
+            if (powerUp)
             {
-                ActivateShield();
-                if (powerUp.addGuns)
+                if (powerUp.activateShield)
                 {
-                    AddGuns();
+                    //ActivateShield();
+                    if (powerUp.addGuns)
+                    {
+                        AddGuns();
+                    }
+                    if (powerUp.incrementarSpeed)
+                    {
+                        IncreaseSpeed();
+                    }
                 }
-                if (powerUp.incrementarSpeed)
-                {
-                    IncreaseSpeed();
-                }
+                Destroy(powerUp.gameObject);
             }
-            Destroy(powerUp.gameObject);
         }
-    }
 
+    }
 }
