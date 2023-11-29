@@ -22,7 +22,7 @@ public class Destructibles : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter(Collider collision)
     {
         if (!CanSerDestroyed)
         {

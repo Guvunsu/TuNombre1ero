@@ -28,7 +28,7 @@ public class bullet : MonoBehaviour
     private void FixedUpdate()
     {
 
-        // transform.Translate(Vector2.right.normalized * speed * Time.deltaTime);
+        transform.Translate(Vector2.right.normalized * speed * Time.deltaTime);
         Vector2 pos = transform.position;
         pos += Velocity * Time.deltaTime;
         transform.position = pos;

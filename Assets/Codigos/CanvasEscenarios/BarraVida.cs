@@ -22,7 +22,7 @@ public class BarraVida : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == ("Player"))
         {

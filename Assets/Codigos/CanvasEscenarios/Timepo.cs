@@ -29,18 +29,18 @@ public class Timepo : MonoBehaviour
 
 
 
-    public void ActualizarPuntos(int puntosTotales)
-    {
-        Puntos.text = puntosTotales.ToString();
-    }
+    /* public void ActualizarPuntos(int puntosTotales)
+     {
+         Puntos.text = puntosTotales.ToString();
+     }
 
-    public void DesactivarVida(int indice)
-    {
-        vidas[indice].SetActive(false);
-    }
+     public void DesactivarVida(int indice)
+     {
+         vidas[indice].SetActive(false);
+     }
 
-    public void ActivarVida(int indice)
-    {
-        vidas[indice].SetActive(true);
-    }
+     public void ActivarVida(int indice)
+     {
+         vidas[indice].SetActive(true);
+     }*/
 }

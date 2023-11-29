@@ -107,7 +107,7 @@ public class Movementcube : MonoBehaviour
         speed *= 2;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter(Collider collision)
     {
 
         bullet Bala = collision.GetComponent<bullet>();
