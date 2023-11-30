@@ -5,45 +5,47 @@ using TMPro;
 
 public class puntos : MonoBehaviour
 {
-    
-    private TMP_Text textComponent;
-    private int puntuacion = 0;
-    public TMP_Text Puntos;
-    public GameObject[] vidas;
-    void Start()
+
+   // private TMP_Text textComponent;
+   // public TMP_Text Puntos;
+
+    public float puntuacion = 0;
+    private TextMeshProUGUI textMesh;
+
+    // public GameObject[] vidas;
+
+    private void Start()
     {
-        textComponent = GetComponent<TMP_Text>();
+        textMesh = GetComponent<TextMeshProUGUI>();
+    }
+
+    private void Update()
+    {
+        puntuacion = Time.deltaTime;
+        textMesh.text = puntuacion.ToString("Puntuacion : 0");
+    }
+
+  public void SumarPuntos(float puntosInicio)
+    {
+        puntuacion += puntosInicio;
     }
 
 
 
-    void Update()
-    {
-        textComponent.text = "Puntuacion:" + puntuacion;
-       
-        
-    }
-    public void AddPoints(int value)
-    {
-        puntuacion = puntuacion + value;
-    }
+    /* public void ActualizarPuntos(int puntosTotales)
+     {
+         Puntos.text = puntosTotales.ToString();
+     }
 
-   
+     public void DesactivarVida(int indice)
+     {
+         vidas[indice].SetActive(false);
+     }
 
-    public void ActualizarPuntos(int puntosTotales)
-    {
-        Puntos.text = puntosTotales.ToString();
-    }
-
-    public void DesactivarVida(int indice)
-    {
-        vidas[indice].SetActive(false);
-    }
-
-    public void ActivarVida(int indice)
-    {
-        vidas[indice].SetActive(true);
-    }
+     public void ActivarVida(int indice)
+     {
+         vidas[indice].SetActive(true);
+     }*/
 }
 
 

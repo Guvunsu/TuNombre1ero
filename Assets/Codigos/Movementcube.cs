@@ -107,12 +107,12 @@ public class Movementcube : MonoBehaviour
         speed *= 2;
     }
 
-    public void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
         bullet Bala = collision.GetComponent<bullet>();
         if (Bala != null)
         {
+            
             Destroy(gameObject);
             Destroy(Bala.gameObject);
         }
@@ -150,6 +150,5 @@ public class Movementcube : MonoBehaviour
                 Destroy(powerUp.gameObject);
             }
         }
-
     }
 }

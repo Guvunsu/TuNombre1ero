@@ -116,6 +116,8 @@ MonoBehaviour:
   activateShield: 1
   addGuns: 0
   incrementarSpeed: 0
+  multiplicador: 1.5
+  PickUpEffect: {fileID: 0}
 --- !u!54 &333541542426629197
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -254,7 +256,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3446010986716505072}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.2}
@@ -314,6 +316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3446010987973450069}
     m_Modifications:
+    - target: {fileID: 3276341866276012140, guid: 0e7a0fae570eab7499565accac405bfb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6691929979956367932, guid: 0e7a0fae570eab7499565accac405bfb, type: 3}
       propertyPath: m_RootOrder
       value: 0

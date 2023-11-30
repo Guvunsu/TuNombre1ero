@@ -15,7 +15,7 @@ public class BulletEnemiga : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 3);
-        transform.Translate(Vector3.left.normalized * Time.deltaTime * speed);
+        transform.Translate(Vector2.left.normalized * speed * Time.deltaTime);
     }
 
     void Update()

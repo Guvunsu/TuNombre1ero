@@ -6,7 +6,8 @@ public class movimientoenemigo : MonoBehaviour
 {
     public float MoveSpeed = 350;
 
-    
+    [SerializeField] private float cantidadPuntos;
+    [SerializeField] private puntos puntuaje;
 
     void Start()
     {
@@ -21,7 +22,16 @@ public class movimientoenemigo : MonoBehaviour
     {
         Vector2 pos = transform.position;
         pos.x -= MoveSpeed * Time.fixedDeltaTime;
-        transform.position = pos; 
+        transform.position = pos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            puntuaje.SumarPuntos(cantidadPuntos);
+            Destroy(gameObject);
+        }
     }
 }
 

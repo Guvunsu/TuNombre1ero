@@ -7,6 +7,9 @@ public class Destructibles : MonoBehaviour
     public bool EstaActivo = false;
     bool CanSerDestroyed = false;
 
+    private float cantidadPuntos;
+    private puntos puntuaje; 
+
     void Start()
     {
 

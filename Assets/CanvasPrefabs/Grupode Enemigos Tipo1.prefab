@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319856627531726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319856637831471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319856747632923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,6 +490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319856851965548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319857403438844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319857513788717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520319857636561826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5368, y: 633, z: -70.216736}
+  m_LocalPosition: {x: 5071, y: 633, z: -70.216736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -909,6 +921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319857719954724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,6 +1051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319857819356690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,6 +1181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319858199111534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,6 +1311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 350
+  cantidadPuntos: 0
+  puntuaje: {fileID: 0}
 --- !u!114 &520319858206251920
 MonoBehaviour:
   m_ObjectHideFlags: 0

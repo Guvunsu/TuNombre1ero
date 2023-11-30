@@ -12,15 +12,14 @@ public class PowerUp : MonoBehaviour
     public GameObject PickUpEffect;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            PickUp(other);
+            PickUp(collision);
         }
     }
-
-    void PickUp(Collider player)
+    void PickUp(Collider2D player)
     {
         Instantiate(PickUpEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
