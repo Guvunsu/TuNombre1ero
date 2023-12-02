@@ -34,7 +34,7 @@ public class bullet : MonoBehaviour
         transform.position = pos;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == ("Untagged"))
         {

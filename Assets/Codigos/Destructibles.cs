@@ -27,8 +27,8 @@ public class Destructibles : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (CanSerDestroyed)
-        {
+        //if (CanSerDestroyed)
+       // {
             if (collision.gameObject.tag == "Player")
             {
                 Destroy(gameObject);
@@ -37,10 +37,10 @@ public class Destructibles : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            else
-                CanSerDestroyed = false;
+          //  else
+              //  CanSerDestroyed = false;
 
-        }
+        //}
     }
 }
 

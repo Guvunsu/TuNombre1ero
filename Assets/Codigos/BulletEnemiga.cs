@@ -7,15 +7,15 @@ public class BulletEnemiga : MonoBehaviour
 {
     public Vector2 direction = new Vector2(1, 0);
     public Vector2 Velocity;
-    public float speed = 10;
+    public float speed = 370;
     //public bool shoot = true;
 
     public float Daño = 1;
 
     void Start()
     {
-        Destroy(gameObject);
         transform.Translate(Vector2.left.normalized * speed * Time.deltaTime);
+        Destroy(gameObject , 25);
     }
 
     void Update()

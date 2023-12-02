@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7757042189815352404}
   - component: {fileID: 8783851419458900513}
   - component: {fileID: 2249528588612606667}
-  - component: {fileID: 8750197244312112798}
   - component: {fileID: 6752657498798000648}
   - component: {fileID: 6902853320760348252}
   - component: {fileID: 6324043988561407930}
@@ -116,21 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EstaActivo: 0
---- !u!114 &8750197244312112798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611787184901510763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df29bbc40b6d72468e8482450bcf458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 350
-  cantidadPuntos: 100
-  puntuaje: {fileID: 0}
 --- !u!114 &6752657498798000648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +448,6 @@ GameObject:
   - component: {fileID: 7711993151980246280}
   - component: {fileID: 3857075744816776911}
   - component: {fileID: 1642273294658010712}
-  - component: {fileID: 5554885711575875148}
   - component: {fileID: 7269355419409814343}
   - component: {fileID: 4994432289271145039}
   - component: {fileID: 8301270448054128119}
@@ -568,21 +551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EstaActivo: 0
---- !u!114 &5554885711575875148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7887467050432754717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df29bbc40b6d72468e8482450bcf458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 350
-  cantidadPuntos: 100
-  puntuaje: {fileID: 0}
 --- !u!114 &7269355419409814343
 MonoBehaviour:
   m_ObjectHideFlags: 0
