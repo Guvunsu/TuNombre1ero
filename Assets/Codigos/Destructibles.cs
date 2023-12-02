@@ -18,7 +18,7 @@ public class Destructibles : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < 5090f && !CanSerDestroyed)
+        if (transform.position.x < 1932f && !CanSerDestroyed)
         {
             CanSerDestroyed = true;
             gun[] gun = transform.GetComponentsInChildren<gun>();
@@ -27,13 +27,19 @@ public class Destructibles : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (CanSerDestroyed)
         {
-            Destroy(gameObject);
-        }
-        if (collision.gameObject.tag == "Bala")
-        {
-            Destroy(gameObject);
+            if (collision.gameObject.tag == "Player")
+            {
+                Destroy(gameObject);
+            }
+            if (collision.gameObject.tag == "Bala")
+            {
+                Destroy(gameObject);
+            }
+            else
+                CanSerDestroyed = false;
+
         }
     }
 }

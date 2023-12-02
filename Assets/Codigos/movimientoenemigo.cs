@@ -27,9 +27,12 @@ public class movimientoenemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            puntuaje.SumarPuntos(cantidadPuntos);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Bala")
+        {
             Destroy(gameObject);
         }
     }
