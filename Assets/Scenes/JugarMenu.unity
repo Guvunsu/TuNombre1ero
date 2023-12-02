@@ -242,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 13.863, y: 12.052, z: -361.472}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 103, y: -75}
+  m_AnchoredPosition: {x: 212, y: 162}
   m_SizeDelta: {x: 160, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &256058510
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EL Galagan Pirata Mexican Space ver.
+  m_text: Dragon Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 24.95
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -379,8 +379,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 774, y: 336}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 19, y: 367}
+  m_SizeDelta: {x: 321.8628, y: 96.9777}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &342825171
 MonoBehaviour:
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.85
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -858,8 +858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1658, y: 137}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 1356, y: 81.18521}
+  m_SizeDelta: {x: 360.9331, y: 85.8148}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &756161880
 MonoBehaviour:
@@ -1040,10 +1040,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1127,8 +1127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -102, y: 529}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -1300, y: 81.185}
+  m_SizeDelta: {x: 354.07, y: 92.815}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1021703532
 MonoBehaviour:
@@ -1309,7 +1309,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.85
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

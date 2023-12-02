@@ -8,7 +8,7 @@ public class Destructibles : MonoBehaviour
     bool CanSerDestroyed = false;
 
     private float cantidadPuntos;
-    private puntos puntuaje; 
+    private puntos puntuaje;
 
     void Start()
     {
@@ -25,23 +25,16 @@ public class Destructibles : MonoBehaviour
         }
 
     }
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!CanSerDestroyed)
+        if (collision.gameObject.tag == "Player")
         {
-            return;
-        }
-        bullet Bullet = collision.GetComponent<bullet>();
-        if (Bullet != null)
-        {
-            if (Bullet != EstaActivo )
-                {
-
             Destroy(gameObject);
-            Destroy(Bullet.gameObject);
-            }
         }
-
+        if (collision.gameObject.tag == "Bala")
+        {
+            Destroy(gameObject);
+        }
     }
 }
 

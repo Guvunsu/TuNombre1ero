@@ -11,14 +11,14 @@ public class bullet : MonoBehaviour
     public Vector2 Velocity;
     public float speed = 250;
 
-    public bool isEnemy = false;
+    // public bool isEnemy = false;
 
     public float Daño = 1;
 
     void Start()
     {
         Destroy(gameObject, 3);
-      
+
     }
 
     void Update()
@@ -38,6 +38,7 @@ public class bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == ("Untagged"))
         {
+            Destroy(collision.gameObject);
             Destroy(gameObject);
 
         }

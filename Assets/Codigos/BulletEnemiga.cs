@@ -14,7 +14,7 @@ public class BulletEnemiga : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 3);
+        Destroy(gameObject);
         transform.Translate(Vector2.left.normalized * speed * Time.deltaTime);
     }
 
@@ -37,7 +37,7 @@ public class BulletEnemiga : MonoBehaviour
         //    }
     }
 
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == ("Player"))
         {
