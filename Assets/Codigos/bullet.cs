@@ -34,11 +34,11 @@ public class bullet : MonoBehaviour
         transform.position = pos;
     }
 
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerEnter2D(Collider2D enemigo)
     {
-        if (collision.gameObject.tag == ("Untagged"))
+        if (enemigo.gameObject.tag == ("Untagged"))
         {
-            Destroy(collision.gameObject);
+            Destroy(enemigo.gameObject);
             Destroy(gameObject);
 
         }

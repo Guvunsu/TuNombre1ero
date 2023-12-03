@@ -8,6 +8,7 @@ TagManager:
   - Jugador
   - PoerUpShield
   - Fondo
+  - Bala
   layers:
   - Default
   - TransparentFX

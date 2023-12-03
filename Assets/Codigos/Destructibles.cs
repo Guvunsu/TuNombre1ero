@@ -29,11 +29,11 @@ public class Destructibles : MonoBehaviour
     {
         //if (CanSerDestroyed)
        // {
-            if (collision.gameObject.tag == "Player")
+            if (collision.gameObject.tag == "Bala")
             {
                 Destroy(gameObject);
             }
-            if (collision.gameObject.tag == "Bala")
+            if (collision.gameObject.tag == "Jugador")
             {
                 Destroy(gameObject);
             }

@@ -6,8 +6,8 @@ public class movimientoenemigo : MonoBehaviour
 {
     public float MoveSpeed = 350;
 
-    [SerializeField] private float cantidadPuntos;
-    [SerializeField] private puntos puntuaje;
+    [SerializeField] public float cantidadPuntos;
+    [SerializeField] public puntos puntuaje;
 
     void Start()
     {
@@ -27,14 +27,11 @@ public class movimientoenemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
         if (collision.gameObject.tag == "Bala")
         {
             Destroy(gameObject);
         }
+      
     }
 }
 

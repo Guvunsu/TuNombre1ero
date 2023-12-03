@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef55328c6615b944ab0ec87e7a0b98b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EstaActivo: 0
+  EstaActivo: 1
 --- !u!114 &6752657498798000648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,11 +187,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &2597517144157856206
 GameObject:
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef55328c6615b944ab0ec87e7a0b98b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EstaActivo: 0
+  EstaActivo: 1
 --- !u!114 &2597517144157856201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,11 +380,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &2597517145849792866
 GameObject:
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef55328c6615b944ab0ec87e7a0b98b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EstaActivo: 0
+  EstaActivo: 1
 --- !u!114 &7269355419409814343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,9 +607,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0

@@ -149,6 +149,7 @@ public class Movementcube : MonoBehaviour
                 }
                 Destroy(powerUp.gameObject);
             }
+          //  //Destroy(gameObject);//con esto me mato si me tocan 
         }
     }
 }

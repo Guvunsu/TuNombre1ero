@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dd1b7763bc94746b8964aa43c034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   speed: 450
   "Da\xF1o": 1

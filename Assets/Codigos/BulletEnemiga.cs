@@ -28,11 +28,11 @@ public class BulletEnemiga : MonoBehaviour
         transform.position = Pos;
     }
 
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == ("Player"))
+        if (other.gameObject.tag == ("Jugador"))
         {
-            Destroy(collision.gameObject);
+           
             Destroy(gameObject);
 
         }
