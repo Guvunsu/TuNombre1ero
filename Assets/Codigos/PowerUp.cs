@@ -21,6 +21,10 @@ public class PowerUp : MonoBehaviour
     }
     void PickUp(Collider2D player)
     {
+        if (player.CompareTag("Player"))
+        {
+            PickUp(player);
+        }
         Instantiate(PickUpEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
