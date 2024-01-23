@@ -21,6 +21,7 @@ public class puntos : MonoBehaviour
 
     private void Update()
     {
+       
         puntuacion = Time.deltaTime;
         textMesh.text = puntuacion.ToString("Puntuacion : 0");
     }
