@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2885102293289683026}
   m_Layer: 0
   m_Name: BossFinal
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009000292958897968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18328, y: 512.7362, z: -8.2754545}
+  m_LocalPosition: {x: 18328, y: 512.7362, z: 0}
   m_LocalScale: {x: 183.85579, y: 118.47867, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

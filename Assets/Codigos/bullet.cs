@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
-using UnityEngine.EventSystems;
+
 
 public class bullet : MonoBehaviour
 {
@@ -11,7 +8,7 @@ public class bullet : MonoBehaviour
     public Vector2 Velocity;
     public float speed = 250;
 
-    // public bool isEnemy = false;
+
 
     public float Daño = 1;
 
@@ -36,7 +33,7 @@ public class bullet : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D enemigo)
     {
-        if (enemigo.gameObject.tag == ("Untagged"))
+        if (enemigo.gameObject.tag == ("Enemigo"))
         {
             Destroy(enemigo.gameObject);
             Destroy(gameObject);

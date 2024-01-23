@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6560477537524556700}
   m_Layer: 0
   m_Name: EnemigoTipo2 (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 8948269020173032175}
   m_Layer: 0
   m_Name: EnemigoTipo2
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 3102896839293208072}
   m_Layer: 0
   m_Name: EnemigoTipo2 (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
